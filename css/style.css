@@ -22,7 +22,7 @@ body{
     overflow: hidden;
 }
 .group{
-    height: 20vh;
+    height: 60vh;
 }
 .group1{
     background-color: violet;
@@ -42,8 +42,8 @@ body{
 .slogan{
     background-color: lightgreen;
     height: 10vh;
-    clear: both;
-    margin-top: 200px;
+    /* clear: both; */
+    /* margin-top: 200px; */
 }
 .footer{
     background-color: silver;
