@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+body *, body *::before, body *::after{
+    box-sizing: border-box;
+}
 .header, .visual, .main, .slogan, .footer-content{
     width: 940px;
     margin: 0 auto;  
@@ -17,12 +20,16 @@ body{
 }
 .main{
     background-color: blue;
-    /* height: 60vh; */
-    border: 10px solid green; 
-    overflow: hidden;
+    padding: 30px 15px;
+}
+.main::after{
+     content: "";
+     display: block;
+     clear: both;
 }
 .group{
     height: 60vh;
+    margin: 0 15px;
 }
 .group1{
     background-color: violet;
