@@ -20,30 +20,24 @@ body *, body *::before, body *::after{
 }
 .main{
     background-color: blue;
-    padding: 30px 15px;
-}
-.main::after{
-     content: "";
-     display: block;
-     clear: both;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
 }
 .group{
     height: 60vh;
-    margin: 0 15px;
 }
 .group1{
     background-color: violet;
-    float: left;
     width: 250px;
 }
 .group2{
     background-color: aqua;
     width: 380px;
-    float: left;
 }
 .group3{
     background-color: sandybrown;
-    float: left;
     width: 190px;
 }
 .slogan{
