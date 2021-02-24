@@ -2,7 +2,7 @@
 @import url(./normalize.css);
 /* 숨김 콘텐츠 */
 .a11y-hidden{
-    background-color: yellow;
+    background-color: red;
     position: absolute;
     width: 1px;
     height: 1px;
@@ -10,6 +10,12 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
     clip-path: polygon(0 0, 0 0, 0 0);
+}
+/* 스타일 초기화 */
+.reset-list{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 html{
     font-size: 10px;
@@ -37,13 +43,13 @@ a{
 .header{
     background-color: #fff;
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 50px;
 }
 /* 로고 */
 .logo{
     margin: 0;
     position: absolute;
-    top: 45px;
+    top: 41px;
     left: 65px;
     font-size: 100%;
     line-height: 1;
@@ -70,6 +76,49 @@ a{
 }
 .divider{
     margin: 0 3px;
+}
+/* 메인 메뉴 */
+.menu{
+    border-top: 2px solid #000;
+    /* box-shadow: 0 -2px 0 0 #000; */
+    background:#d66c2a linear-gradient(to bottom, #e8aa2e 0%,#d66c2a 35%,#d66c2a 70%,#e8aa2e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-radius: 0 0 5px 5px;
+    height: 47px;
+    padding-left: 225px;
+}
+.menu-item{
+    float: left;
+    border-left: 1px solid #fff;
+    line-height: 45px;
+}
+.menu-item-button{
+    display: block;
+    color: #fff;
+    padding: 2px 20px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+.menu-act .menu-item-button{
+    color: #ff0; 
+    /* border-bottom: 2px solid #000; */
+}
+.menu-act .menu-item-button::after{
+    content: "";
+    display: block;
+    background-color: #000;
+    height: 2px;
+    margin-top: -2px;
+}
+.sub-menu{
+    background-color: pink;
+    position: absolute;
+    display: none;
+}
+.sub-menu1{
+    display: block;
+    top: 0;
+    left: 0;
 }
 .visual{
     background-color: salmon;
