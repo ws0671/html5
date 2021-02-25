@@ -2,7 +2,7 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
     background-color: red;
     position: absolute;
     width: 1px;
@@ -230,6 +230,104 @@ a{
 }
 .group3{
     width: 190px;
+}
+/* 로그인 */
+.login{
+    background: radial-gradient(circle at right top, #e8aa2e, #d66c2a);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #aaa;
+    padding: 10px;
+}
+.login-heading{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff0;
+    text-indent: 10px;
+}
+.login-form{
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px 0 10px;
+    margin-top: 10px;
+}
+.login-form fieldset{
+    margin: 0;
+    padding: 0 0 10px 0;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+.user-pw{
+    margin-top: 6px;
+}
+.login-form label{
+    display: inline-block;
+    width: 50px;
+    
+}
+.login-form input{
+    width: 90px;
+    height: 22px;
+    padding: 1px 1px 1px 5px;
+    border: 1px solid #aaa;
+}
+.btn-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #d66c2a;
+    padding: 0;
+    border: 0;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.member-service{
+    background-color: #fff;
+    padding: 5px 10px;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.member-service a{
+    display: inline-block;
+    padding: 5px 0;
+}
+.member-service .icon-right-open{
+    color: #d66c2a;
+}
+/* 유효성 검사 배너 */
+.validation-list{
+    margin: 25px 0 0 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.validation-list a{
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 7px 5px 5px 40px;
+    background: url(./images/validation_icon.png) no-repeat 15px 50%
+    ,linear-gradient(180deg,#ccc,#eee);
+    background-color: #ccc;
+}
+/* 웹 관련 용어 */
+.term{
+    margin-top: 25px;
+    border: 1px solid #aaa;
+    background-color: yellow;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.term-list-thumbnail{
+    position: relative;
+
+
 }
 .slogan{
     background-color: lightgreen;
