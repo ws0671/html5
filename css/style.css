@@ -318,16 +318,58 @@ a{
 }
 /* 웹 관련 용어 */
 .term{
-    margin-top: 25px;
+    margin-top: 20px;
     border: 1px solid #aaa;
-    background-color: yellow;
+    background: #ccc linear-gradient(180deg,#ccc,#eee);
     border-radius: 5px;
-    padding-left: 10px;
+    padding: 15px;
 }
-.term-list-thumbnail{
-    position: relative;
-
-
+.term-heading{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.term-list{
+    margin: 10px 0 0 0;
+}
+.term-list-thumbnail, .term-list-brief{
+    margin-left: 0;
+}
+.term-list-subject, .term-list-brief{
+    width: 145px;
+}
+.term-list-subject{
+    color: #296897;
+    margin-top: -1px;
+}
+.trem-list-brief{
+    margin-top: 5px;
+    line-height: 1.5;
+    /* text-align: justify; */
+}
+.term-list > div::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.term-list > div{
+    /* overflow: hidden; */
+    margin-top: 10px;
+}
+.term-list img{
+    vertical-align: top;
+}
+.term-list div:nth-child(odd) .term-list-subject, .term-list div:nth-child(odd) .term-list-brief{
+    float: right;
+}
+.term-list div:nth-child(odd) .term-list-thumbnail{
+    float: left;
+}
+.term-list div:nth-child(even) .term-list-subject, .term-list div:nth-child(even) .term-list-brief{
+    float: left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail{
+    float: right;
 }
 .slogan{
     background-color: lightgreen;
