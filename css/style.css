@@ -598,7 +598,33 @@ a{
     background-position: -35px 0;
 }
 .related{
-    background-color: pink;
+    padding-top: 10px;
+}
+.related-list{
+    background-color: #fff;
+    height: 27px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+.related-list:hover, .related-list:focus{
+    height: 147px;
+    padding: 10px 0;
+}
+.related-list a{
+    display: block;
+    line-height: 25px;
+    text-indent: 2em;
+    border-radius: 5px;
+}
+.related-list a:focus{
+    outline: 1px solid darkblue;
+    outline-offset: -2px;
 }
 .event-heading, .related-heading{
     font-size: 1.5rem;
